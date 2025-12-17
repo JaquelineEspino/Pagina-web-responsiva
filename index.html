@@ -11,6 +11,84 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-   
+    <!------------- Aqui van navbar, footer y banner de cookies-->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#inicio" class="nav__Logo">
+                <img src="./src/img/logo.png" alt="logo de Jaqui Espino">
+                <span>Jaqui.dev</span>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#sobremi" class="nav-link">Sobre mi</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="navbar__cta">Hablemos</a>
+        </nav> 
+    </header>
+
+    <!--- Contenido principal -->
+    <main>
+        <!------- Hero/banner para tener mi contenido principal-->
+        <section id="inicio" class="hero">
+            <h1>Hola, soy Jaqui Espino</h1>
+            <p>Código interfaz web modernas, responsiva y accesible</p>
+        </section>
+
+        <section id="proyectos" class="section">
+            <h2>Proyectos</h2>
+            <p>Aqui van mis proyectos personales</p>
+        </section>
+
+        <section id="sobremi" class="section">
+            <h2>Sobre mi</h2>
+            <p>Información sobre mi</p>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Formulario de contacto o información</p>
+        </section>
+
+        <footer id="terminos" class="site-footer">
+            <section class="footer__cols">
+                <div>
+                    <h3>Jaqui ES</h3>
+                    <p>Programadora y Desarrolladora Web</p>
+                </div>
+                <div>
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#sobremi">Sobre mi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#terminos">Términos y condiciones</a></li>
+                        <li><a href="#privacidad">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Sigueme</h4>
+                    <ul>
+                        <li><a href="https://github.com/JaquelineEspino" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/jaqueline-espino-sigala-b3b95a342/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </section> 
+            <small>&copy; 2025 Jaqui Espino. Todos los derechos reservados.</small>
+        </footer>
+
+        <!------ Banner de cookies -->
+        <div class="cookie-banner">
+            <p>Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.
+            <a href="#privacidad">Más información</a>
+            </p>
+            <button class="cookie-banner__btn">Aceptar</button>
+        </div>
+    </main>
 </body>
 </html>
