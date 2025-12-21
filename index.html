@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="description" content="Prtafolio web moderno con navbar, footer, banner de cookies y flexbox">
     <link rel="stylesheet" href="./src/css/style.css">
-    <script src="./src/js/main.js"></script>
+    
 </head>
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -19,10 +19,10 @@
         <nav class="navbar container" aria-label="Navegación principal">
             <a href="#inicio" class="nav__logo" aria-label="Ir a inicio">
                 <img src="./src/img/logo.png" alt="logo de Jaqui Espino">
-                <span>JaquiES <span class="brand-dot">.Dev</span></span> <!-- 15:13-->
+                <span>JaquiES <span class="brand-dot">.Dev</span></span> 
             </a>
             <div class="nav__actions">
-                <ul class="nav__menu">
+                <ul class="nav__menu" id="navMenu">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
                     <li><a href="#sobremi" class="nav-link">Sobre mi</a></li>
@@ -57,13 +57,15 @@
     </header>
 
     <!--- Contenido principal -->
-    <main>
+    <main id="contenido">
         <!------- Hero/banner para tener mi contenido principal-->
         <section id="inicio" class="hero">
             <h1>Hola, soy Jaqui Espino</h1>
             <p>Código interfaz web modernas, responsiva y accesible</p>
         </section>
+    </main>
 
+    <!--- Placeholder de proyectos personales -->
         <section id="proyectos" class="section">
             <h2>Proyectos</h2>
             <p>Aqui van mis proyectos personales</p>
@@ -79,6 +81,7 @@
             <p>Formulario de contacto o información</p>
         </section>
 
+        <!------ Footer con links y redes sociales -->
         <footer id="terminos" class="site-footer">
             <section class="footer__cols">
                 <div>
@@ -96,7 +99,7 @@
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="#terminos">Términos y condiciones</a></li>
-                        <li><a href="#privacidad">Política de privacidad</a></li>
+                    </li><a href="#privacidad">Política de privacidad</a></li>
                     </ul>
                 </div>
                 <div>
@@ -111,12 +114,17 @@
         </footer>
 
         <!------ Banner de cookies -->
-        <div class="cookie-banner">
-            <p>Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.
-            <a href="#privacidad">Más información</a>
-            </p>
-            <button class="cookie-banner__btn">Aceptar</button>
-        </div>
-    </main>
+        <section class="cookie" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+            <div class="cookie__content container">
+                <p>Usamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.
+                <a href="privacidad.html">Más información</a>
+                </p>
+                <div class="cookie__actions">
+                    <button class="btn btn--ghost" id="cookieReject">Rechazar</button>
+                    <button class="btn btn--primary" id="cookieAccept">Aceptar</button>
+                </div>
+            </div>
+        </section>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>
