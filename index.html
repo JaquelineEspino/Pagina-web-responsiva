@@ -61,24 +61,104 @@
         <!------- Hero/banner para tener mi contenido principal-->
         <section id="inicio" class="hero">
             <h1>Hola, soy Jaqui Espino</h1>
-            <p>Código interfaz web modernas, responsiva y accesible</p>
+            <p>En esta página encontrarás mi portafolio personal e información sobre mi con una interfaz web moderna, responsiva y accesible</p>
         </section>
     </main>
 
     <!--- Placeholder de proyectos personales -->
         <section id="proyectos" class="section">
-            <h2>Proyectos</h2>
-            <p>Aqui van mis proyectos personales</p>
+            <h2>Proyectos DEV.F</h2>
+            <p class="section-desc">Estos son algunos de los proyectos que he desarrollado durante mi formación en el curso de Desarrollo Frontend.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="card-header">
+                        <h3>Blog Omori</h3>
+                        <span class="tag">Módulo 1</span>
+                    </div>
+                    <p>Descripción: Un blog sobre el videojuego "Omori" que incluye descripción de los personajes principales y la trama. Este fue mi proyecto final del módulo 1</p>
+                    <div class="card-links">
+                        <a href="https://github.com/JaquelineEspino/Proyecto-Final-Modulo1-DEVF" target="_blank" rel="noopener" class="btn-small">Repositorio Proyecto-Final-Modulo1-DEVF</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">
+                        <h3>Blog Arcano (Beta)</h3>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                    <p>Descripción: Un blog sobre la serie animada "Arcane" que contiene una descripción y sinopsis de la misma, además de una descripción con imágenes de los personajes más importantes.
+                        Este fue el primer proyecto que realicé para el módulo 2 del curso de Desarrollo Frontend en DEV.F.
+                    </p>
+                    <div class="card-links">
+                        <a href="https://github.com/JaquelineEspino/Practica-introduccion-CSS" target="_blank" rel="noopener" class="btn-small">Repositorio Practica-introduccion-CSS</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">
+                        <h3>Blog Arcano (Final)</h3>
+                        <span class="tag">CSS Avanzado</span>
+                    </div>
+                    <p>Descripción: El mismo blog sobre la serie "Arcane" pero en su versión final, con mejoras en el diseño y funcionalidad.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/JaquelineEspino/Position-CSS" target="_blank" rel="noopener" class="btn-small">Repositorio Position-CSS</a>
+                    </div>
+                </article>
+
+                <article class="project-card highlight-card">
+                    <div class="card-header">
+                        <h3>Portafolio personal</h3>
+                        <span class="tag">Módulo 2</span>
+                    </div>
+                    <p>Descripción: ¡Este sitio! Un blog personal responsivo donde aplico Flexbox, variables CSS, accesibilidad y buenas prácticas.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/JaquelineEspino/Pagina-web-responsiva" target="_blank" rel="noopener" class="btn-small">Repositorio Pagina-web-responsiva</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section id="sobremi" class="section">
             <h2>Sobre mi</h2>
-            <p>Información sobre mi</p>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>¡Hola! Tengo 20 años y estoy estudiando la carrera de <strong>Ingeniería en Sistemas Computacionales</strong>. Tomé el curso de Desarrollo Frontend con <strong>DEV.F</strong> para mejorar mis habilidades en programación web.</p>
+                    <p>
+                        Me gusta mucho crear sitios web atractivos y funcionales, y estoy emocionada por seguir aprendiendo y creciendo en este campo. En mi tiempo libre, disfruto de explorar cosas nuevas relacionadas con la tecnología.
+                        pero también me relajo disfrutando de mis otras pasiones.
+                    </p>
+                </div>
+
+                <div class="about-hobbies">
+                    <h3>Lo que me gusta:</h3>
+                    <ul class="tags-list">
+                        <li>🎮 Videojuegos</li>
+                        <li>🇫🇷 Aprender idiomas</li>
+                        <li>🎨 Dibujar</li>
+                        <li>🎵 Música</li>
+                        <li>💻 Tecnología</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contacto" class="section">
             <h2>Contacto</h2>
-            <p>Formulario de contacto o información</p>
+            <p style="text-align: center; margin-bottom: 2rem;">¿Tienes un proyecto en mente o quieres hablar de un tema en especial? ¡Escríbeme!</p>
+            
+            <div class="form-container">
+                <form class="formulario-flex">
+                    <div class="input-group">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="Nombre" placeholder="Escribe tu nombre..." required>
+                    </div>
+                    <div class="input-group">
+                        <label for="correo">Correo electrónico: </label>
+                        <input type="email" id="Correo" name="correo" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
         </section>
 
         <!------ Footer con links y redes sociales -->
